@@ -1,0 +1,134 @@
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        background-image: url(andre-alexander-CKyD4ex3hUQ-unsplash.jpg);
+        background-size: cover;
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+    }
+   header {
+        background :rgba(255, 255,255, 0.2) ;
+        color:black;
+        padding: 10px;
+        text-align: center;
+    }
+
+header h1 {
+    margin-bottom: 10px;
+}
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+nav ul li a {
+    color:black;
+    text-decoration: none;
+}
+    a:hover{
+    background-color: black;
+     color:whitesmoke;
+  }
+    
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+    .contact-info {
+        flex: 1 1 300px;
+        color: rgb(251, 251, 251);
+        margin-right: 2px;
+    }
+    .contact-form {
+        flex: 1 1 300px;
+        color: black ;
+        background :rgba(255, 255,255, 0.2) ;
+    }
+    
+    .contact-form form {
+        display: flex;
+        flex-direction: column;
+    }
+    #subbut:hover{
+         background-color: seagreen;
+    }
+    .contact-form label {
+        margin-bottom: 5px;
+    }
+    
+    .contact-form input,
+    .contact-form textarea {
+        margin-bottom: 10px;
+        padding: 10px;
+        border: 1px solid #ccc;
+    }
+    
+    .contact-form input[type="submit"] {
+        color: black;
+        cursor: pointer;
+    }
+    
+    footer {
+        background-color: #333;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+        margin-top:160px ;
+    }
+    </style>
+    <!DOCTYPE html>
+    <head>
+      <title>Contact Us - Hotel America</title>
+      <link rel="icon" href="mylogo.png">
+    </head>
+    <body>
+        <header>
+            <h1>Contact Us</h1>
+            <nav>
+                <a href="#" id="logo"><img src="imgaes/mylogo.png" alt=""></a>
+                <nav class="navbar">
+                    </nav> 
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="bookings.html">Bookings</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+        </header>
+    
+        <section id="contact">
+            <div class="container">
+                <div class="contact-info">
+                    <h2>Contact Information</h2>
+                    <p><strong>Address:</strong> 123 Main Street,<br>Thousand Lights,Chennai</p>
+                    <p><strong>Phone:</strong> 2345678</p>
+                    <p><strong>Email:</strong> info@hotelamerica.com</p>
+                </div>
+                <div class="contact-form">
+                    <h2>Contact Form</h2>
+                    <form action="submit_form.php" method="POST">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" required></textarea>
+                        <input id="subbut" type="submit" value="Submit">
+                    </form>
+                </div>
+            </div>
+        </section>
+    
+        <footer>
+            <p>&copy; 2024 Hotel  America. All rights reserved.</p>
+        </footer>
+    </body>
+    </html>

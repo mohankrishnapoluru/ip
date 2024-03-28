@@ -1,0 +1,126 @@
+<style>
+    .header{
+    padding: 2rem 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    box-shadow: 0 .5rem .5rem rgb(0, 0, 0, .1);
+  
+}
+body{
+    background-image:url(andre-alexander-CKyD4ex3hUQ-unsplash.jpg);
+    background-size: cover;
+}
+.formbox{
+    background: rgbd(255,255,255.0.6);
+}
+.header #logo img{}
+    width: 80px;
+}
+.header .navbar a{
+    font-size: 1.7rem;
+    margin-left: 1.5rem;
+    color: var(--maincolor);
+
+}
+.header .navbar a:hover{
+   color: black;
+}
+.header .icons{
+    font-size: 2rem;
+   
+}
+
+.header .icons div{
+    margin-left: 1rem;
+    cursor: pointer;
+}
+.header .icons div:hover{
+    color: var(--maincolor);
+}
+.header .icons #menu-bars{
+    display: none;
+}
+.header .search-box{
+    position: absolute;
+    top: 110%;
+    right: 100%;
+    width: 50%;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.header .search-box input{
+    padding: 1.5rem;
+    border-radius: 15px;
+    width: 100%;
+    border: none;
+}
+.header .search-box.active{
+    right: 2rem;
+}
+.header .navbar.active{
+    left: 0;
+}
+</style>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Bookings- Hotel America</title>
+      <link rel="icon" href="mylogo.png">
+    </head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Room Booking</title>
+    <!-- Load Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nanum+Gothic">
+    <style>
+        /* Style the booking form */
+        .booking-form {
+            width: 500px;
+            margin: 0 auto;
+            padding: 50px;
+            background: #fff;
+        }
+        .elem-group {
+            /* Add your custom styling here */
+        }
+        /* Add more CSS rules as needed */
+    </style>
+</head>
+<body>
+    <header class="header">
+        <a href="#" id="logo"><img src="imgaes/mylogo.png" alt=""></a>
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="bookings.html">Bookings</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <div class="icons">
+            
+            <div class="fas fa-user" id="myuser"></div>
+            <div class="fas fa-search" id="serach-bar"></div>
+            <div class="fas fa-bars" id="menu-bars"></div>
+        </div>
+
+        <div class="search-box">
+            <input type="search" placeholder="search here">
+        </div>
+        
+    </header><br><br><br><br><br><br><br>
+    <form class="booking-form" action="#" method="post">
+        <div class="formbox">
+        <div class="elem-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="visitor_name" required>
+        </div>
+        <br>
+        <button type="submit">Book The Rooms</button>
+    </form>
+    </div>
+</body>
+</html>
